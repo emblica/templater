@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: render-template-pod
+spec:
+  restartPolicy: OnFailure
+  volumes:
+  - name: template-and-data
+    emptyDir: {}
+
+  containers:
+  - name: stats
+    image: emblica/templater
+    args: ['/mnt/example/data.json' '/mnt/example/template.md' '/mnt/example/output.md']
+    volumeMounts:
+    - name: template-and-data
+      mountPath: /mnt/example
