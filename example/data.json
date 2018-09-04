@@ -1,0 +1,9 @@
+{
+  "title": "Alice's Adventures in Wonderland",
+  "author": "Lewis Caroll",
+  "characters": [
+    {"name": "Alice",            "type": "human"},
+    {"name": "The White Rabbit", "type": "creature"},
+    {"name": "The Cheshire Cat", "type": "creature"}
+  ]
+}
